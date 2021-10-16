@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3 ">
+
+
+<h3>Add Employee</h3>
+<form action="" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="">First Name</label>
+        <input type="text" name="firstName" id="firstName" class="form-control" [(ngModel)]="employee.firstName">
+    </div>
+    <div class="form-group"> 
+        <label for="">Last Name</label>
+        <input type="text" name="firstName" id="lastName" class="form-control" [(ngModel)]="employee.lastName">
+    </div>
+    <div class="form-group">
+        <label for="">Email Id</label>
+        <input type="text" name="emailId" id="emailId" class="form-control" [(ngModel)]="employee.emailId">
+    </div>
+    <div class="form-group">
+        <label for="">Phone Number</label>
+        <input type="text" name="phNo" id="phNo" class="form-control" [(ngModel)]="employee.phNo">
+    </div>
+    <div class="form-group">
+        <label for="image">Select Image</label>
+        <input type="file" name="image" id="image" accept="image/*" class="form-control">
+    </div>
+    <div class="form-group"> 
+        <label for="">designation</label>
+        <input type="text" name="designation" id="designation" class="form-control" [(ngModel)]="employee.designation">
+    </div>
+    <div class="form-group"> 
+        <button type="submit" class="btn btn-success" (click)="saveForm()">Submit</button>
+    </div>
+</form>
+
+</div>

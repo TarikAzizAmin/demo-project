@@ -1,0 +1,30 @@
+<h3>Employee Details</h3>
+<div class="container">
+
+    <div>
+        <img [src]="imageUrl" style="height: 200px; width: 200px;">
+    </div>
+
+    <div>
+        <label for=""><b>First Name:  </b></label> {{employee?.firstName}}
+    </div>
+    <div>
+        <label for=""><b>Last Name:  </b></label> {{employee?.lastName}}
+    </div>
+    <div>
+        <label for=""><b>Email Id:  </b></label> {{employee?.emailId}}
+    </div>
+    <div>
+        <label for=""><b>Ph No:  </b></label> {{employee?.phNo}}
+    </div>
+    <div>
+        <label for=""><b>Designation:  </b></label> {{employee?.designation}}
+    </div>
+    
+</div>
+
+
+
+<div>
+    <button class="btn btn-link" (click)="goToEmployeeList()"type="button">Go To Employee List</button>
+</div>
